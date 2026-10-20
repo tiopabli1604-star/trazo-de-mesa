@@ -1,0 +1,29 @@
+{
+  "runtime": "standalone production on Windows",
+  "results": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/about",
+      "status": 200
+    },
+    {
+      "path": "/privacy",
+      "status": 200
+    },
+    {
+      "path": "/terms",
+      "status": 200
+    },
+    {
+      "path": "/studio.png",
+      "status": 200
+    },
+    {
+      "path": "/api/session",
+      "status": 200
+    }
+  ]
+}

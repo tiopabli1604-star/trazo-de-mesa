@@ -1,0 +1,29 @@
+{
+  "environment": "local production instance; synthetic credentials; no external accounts",
+  "results": [
+    {
+      "name": "anonymous owner reads denied",
+      "status": "passed"
+    },
+    {
+      "name": "wrong password denied",
+      "status": "passed"
+    },
+    {
+      "name": "synthetic login returns http-only strict session",
+      "status": "passed"
+    },
+    {
+      "name": "authenticated owner reads allowed",
+      "status": "passed"
+    },
+    {
+      "name": "cross-origin mutation denied even with cookie",
+      "status": "passed"
+    },
+    {
+      "name": "signout expires the browser cookie",
+      "status": "passed"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-20",
+  "browser": {
+    "passed": 11,
+    "failed": 0,
+    "flaky": 0,
+    "environment": "Windows standalone production, Chromium"
+  },
+  "document_contract": {
+    "passed": 5,
+    "failed": 0
+  },
+  "hosted_auth_local_synthetic": {
+    "passed": 6,
+    "failed": 0
+  },
+  "contrast": {
+    "pairs": 15,
+    "aa_failures": 0
+  },
+  "listing": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "dependency_audit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "build": "passed; postbuild includes native sharp platform packages",
+  "external_deployment": "not configured"
+}

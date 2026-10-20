@@ -1,0 +1,3 @@
+Clean. Nothing of the original's name, domain or colours found.
+
+Comprobación adicional de palabra completa y dominio en src/public: sin coincidencias.

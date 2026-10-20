@@ -1,0 +1,7 @@
+import {test,expect} from '@playwright/test';
+import {createHash,randomBytes,randomUUID} from 'node:crypto';
+import sharp from 'sharp';
+test('publicación idempotente, metadatos alterados y borrado repetido',async({request})=>{
+  const base='http://127.0.0.1:3000';const meta={id:randomUUID(),requestId:randomUUID(),designId:randomUUID(),title:'Prueba sintética de publicación',tokenHash:createHash('sha256').update(randomBytes(32)).digest('hex'),revision:1};const image=await sharp({create:{width:50,height:50,channels:3,background:'#245641'}}).png().toBuffer();const pageId=randomUUID();const payload=(title:string)=>({meta:JSON.stringify({...meta,title}),pages:{name:pageId+'.png',mimeType:'image/png',buffer:image}});
+  const first=await request.post('/api/publications',{headers:{Origin:base},multipart:payload(meta.title)});expect(first.status()).toBe(201);const second=await request.post('/api/publications',{headers:{Origin:base},multipart:payload(meta.title)});expect(second.status()).toBe(200);expect((await second.json()).id).toBe(meta.id);const conflict=await request.post('/api/publications',{headers:{Origin:base},multipart:payload('Otro título')});expect(conflict.status()).toBe(409);expect((await request.delete('/api/publications/'+meta.id,{headers:{Origin:base}})).status()).toBe(204);expect((await request.delete('/api/publications/'+meta.id,{headers:{Origin:base}})).status()).toBe(204);
+});

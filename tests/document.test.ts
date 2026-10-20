@@ -1,0 +1,8 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {newDesign,documentSchema,templates,cloneDesign,uid} from '../src/lib/document';
+test('las seis plantillas cumplen el contrato y tienen identificadores independientes',()=>{for(const t of templates){const a=t.make(),b=t.make();assert.ok(documentSchema.safeParse(a).success);assert.notEqual(a.id,b.id);assert.notEqual(a.pages[0].id,b.pages[0].id);}});
+test('duplicar no modifica el original ni comparte IDs de elementos',()=>{const original=templates[0].make();const copy=cloneDesign(original);copy.pages[0].elements[0].text='Otro texto';assert.notEqual(copy.pages[0].elements[0].id,original.pages[0].elements[0].id);assert.notEqual(original.pages[0].elements[0].text,'Otro texto');});
+test('rechaza páginas repetidas y un documento sin páginas',()=>{const d=newDesign();d.pages.push(structuredClone(d.pages[0]));assert.equal(documentSchema.safeParse(d).success,false);d.pages=[];assert.equal(documentSchema.safeParse(d).success,false);});
+test('rechaza dimensiones y geometrías no finitas',()=>{const d=templates[0].make();d.pages[0].elements[0].x=Infinity;assert.equal(documentSchema.safeParse(d).success,false);const e=newDesign('Prueba',8192,8192);assert.equal(documentSchema.safeParse(e).success,false);});
+test('clonar conserva un grupo con un identificador nuevo',()=>{const d=templates[0].make();const group=uid();d.pages[0].elements[0].groupId=group;d.pages[0].elements[1].groupId=group;const copy=cloneDesign(d);assert.equal(copy.pages[0].elements[0].groupId,copy.pages[0].elements[1].groupId);assert.notEqual(copy.pages[0].elements[0].groupId,group);});

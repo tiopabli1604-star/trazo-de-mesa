@@ -1,0 +1,19 @@
+{
+  "avoid": [
+    "Canva"
+  ],
+  "status": "borrador de metadatos; aplicación web, sin binario móvil ni envío a tiendas",
+  "app_store": {
+    "name": "Trazo de Mesa",
+    "subtitle": "Tu estudio de diseño personal",
+    "promotional_text": "Crea con plantillas originales, personaliza textos e imágenes y descarga tus diseños. Guarda un respaldo editable para llevar tus proyectos a otro navegador.",
+    "description": "Un pequeño estudio para tus diseños personales.\n\nParte de una plantilla original o de un lienzo en blanco. Edita textos, añade imágenes propias y organiza las páginas. Descarga PNG, JPG o PDF, y conserva un respaldo editable con tus archivos.\n\nLos originales se guardan en este navegador. No hay sincronización automática entre dispositivos. Los enlaces de lectura requieren un servidor accesible al destinatario. El PDF contiene páginas rasterizadas, sin texto seleccionable.\n\nEste texto es un borrador para una posible adaptación móvil futura. La entrega actual es una aplicación web.",
+    "keywords": "carteles,imágenes,plantillas,texto,páginas,respaldo,creatividad,afiches",
+    "whats_new": "Primera edición personal del editor web."
+  },
+  "google_play": {
+    "title": "Trazo de Mesa",
+    "short_description": "Un estudio para crear diseños personales con textos, imágenes y formas.",
+    "full_description": "Crea una pieza visual a tu manera. Elige una plantilla original, personaliza textos e imágenes y descarga PNG, JPG o PDF. Conserva un respaldo editable para trasladar tu trabajo.\n\nLos documentos se guardan en el navegador, sin sincronización automática. Compartir enlaces requiere un servidor accesible. El PDF contiene páginas como imágenes.\n\nBorrador de metadatos para una posible adaptación móvil. La entrega actual es una aplicación web."
+  }
+}

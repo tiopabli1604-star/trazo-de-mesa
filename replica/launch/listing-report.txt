@@ -1,0 +1,16 @@
+App Store
+  name                  13 / 30    ok
+  subtitle              29 / 30    ok
+  promotional_text     157 / 170   ok
+  description          586 / 4000  ok
+  keywords              71 / 100   ok
+  whats_new             40 / 4000  ok
+
+Google Play
+  title                 13 / 30    ok
+  short_description     71 / 80    ok
+  full_description     441 / 4000  ok
+
+No issues.
+
+0 errors, 0 warnings

@@ -1,0 +1,16 @@
+{
+  "name": "Trazo de Mesa",
+  "avoid": [
+    "Canva®",
+    "Canva™"
+  ],
+  "domains": [
+    "canva.com",
+    "static.canva.com"
+  ],
+  "colors": [
+    "#8b3dff",
+    "#00c4cc"
+  ],
+  "note": "Canvas es una API web y no una referencia de marca. Complementar sweep con búsqueda de palabra completa Canva. Colores de bloqueo orientativos; no mediciones del original."
+}

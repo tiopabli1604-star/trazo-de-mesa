@@ -1,0 +1,2 @@
+// Mapeo de referencia; la app usa CSS Modules/global CSS, sin Tailwind.
+module.exports={theme:{extend:{colors:Object.fromEntries(["bg", "surface", "surface-hover", "text", "text-muted", "accent", "accent-hover", "on-accent", "accent-soft", "border", "border-input", "danger", "danger-soft", "success", "warning", "banner", "banner-text", "banner-muted", "paper", "art-text", "art-flower", "preview-bg", "workspace"].map(k=>[k,`var(--${k})`]))}}};

@@ -1,0 +1,42 @@
+feature,area,priority,original,clone,notes
+Crear diseño desde plantilla,plantillas,must,yes,yes,R02; S04-S06; usar plantillas propias; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Buscar plantillas,plantillas,must,yes,yes,R02; S04; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Previsualizar plantilla,plantillas,must,yes,yes,R02; S05; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Crear diseño en blanco,editor,must,yes,yes,R02; acceso a diseño desde cero; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Dimensiones personalizadas,editor,should,yes,yes,R10; validar límites originales; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Editar texto,texto,must,yes,yes,R04; S07; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Cambiar fuente tamaño y color,texto,must,yes,yes,R04; estilos concretos por validar; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Duplicar y eliminar texto,texto,must,yes,yes,R04; S07; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Añadir imágenes propias,imagenes,must,yes,yes,R05-R06; S09; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Subir mediante selector y arrastre,imagenes,must,yes,yes,R06; S09; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Sustituir imagen,imagenes,must,yes,yes,R05; S08; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Añadir elementos gráficos,editor,must,yes,yes,R03; crear catálogo propio; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Mover escalar y girar elementos,editor,must,inferred,yes,S06; validar interacciones y restricciones; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Deshacer y rehacer,editor,must,inferred,yes,S06; requisito propio; detalle original pendiente; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Gestionar páginas,documento,must,yes,yes,R03; detalle de controles pendiente; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Ordenar capas,editor,should,yes,yes,R03; interacción por validar; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Agrupar y bloquear,editor,should,inferred,yes,Capacidad concreta pendiente de validar; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Zoom y ajuste al lienzo,editor,should,inferred,yes,Requisito propio de navegación; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Guardar y reabrir diseño,persistencia,must,yes,yes,R09; mecanismo de guardado no validado; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Guardado automático con recuperación,persistencia,must,inferred,yes,Propuesta propia; estados de guardado por validar; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Listado de proyectos,organizacion,must,yes,yes,R09; S03; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Carpetas,organizacion,should,yes,yes,R09-R10; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Exportar PNG,exportacion,must,yes,yes,R07-R10; S12; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Exportar JPG,exportacion,must,yes,yes,R07-R10; S12; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Exportar PDF,exportacion,must,yes,yes,R07-R10; S12; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Seleccionar páginas al exportar,exportacion,must,yes,yes,R07; S12; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Compartir enlace de lectura,compartir,must,yes,yes,R08; requiere alojamiento accesible; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Revocar enlace,compartir,must,inferred,yes,R08 documenta cambiar permisos; revocación propuesta; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Paleta y tipografías personales,marca,could,yes,yes,R10; alcance propio reducido; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Exportar fondo transparente,exportacion,could,yes,yes,R07; opción limitada por plan en original; Implementado en la edición acotada; ver build-log.md y test-plan.md
+Catálogo de contenido de Canva,contenido,could,yes,skip,Contenido y licencias ajenos; crear recursos propios
+Marca y logotipo de Canva,marca,could,yes,skip,Usar identidad propia
+Edición simultánea y comentarios,colaboracion,could,yes,skip,R08-R10; fuera de primera versión individual
+Vídeo audio e IA,multimedia,could,yes,skip,R01-R03; fuera del editor estático
+Impresión marketplace y publicación social,integraciones,could,yes,skip,R01-R10; acuerdos y servicios fuera de alcance
+Facturación y controles empresariales,administracion,could,yes,skip,R10; innecesario para uso propio
+Duplicación independiente visible,organizacion,should,no,yes,Mejora propia: Copia desde colección; no afirma ausencia de duplicación en el original
+Respaldo editable con imágenes,persistencia,should,no,yes,Mejora propia: ZIP propio para trasladar y recuperar originales
+Confirmación transaccional del guardado,persistencia,should,no,yes,Mejora propia: Guardado solo tras commit; conflicto no sobrescribe
+Acceso directo a proyectos personales,organizacion,should,no,yes,Mejora propia: Navegación Mis diseños de la edición personal
+Revocar publicación sin borrar original,compartir,should,no,yes,Mejora propia: Instantánea separada de datos locales
